@@ -1,6 +1,17 @@
   /* Create an accessible color palette using var()function */
   /* https://www.w3schools.com/css/css3_variables.asp */
-  
+
+  .skip {
+    position: absolute;
+    top: -50px;
+    height: 25px;
+    background-color: white;
+    }
+
+  .skip:focus {
+  top: 10px;
+  }
+    
   form {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -11,7 +22,7 @@
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #702082;
-    background: #CFC096;
+    background: #d9e4ff;
   }
 
   .radio {
@@ -25,15 +36,13 @@
     width: 100%;
     padding: 10px;
     font-size: 18px;
-    font-weight: bold;
-    background: #CFC096;
-    color: #9B9A6D;
   }
 
   #message {
     width: 100%;
     padding: 10px;
     resize: vertical;
+    
   }
 
   input,
@@ -46,13 +55,17 @@
   input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #8babf1;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
 
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #7593d4;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: large;
   }
